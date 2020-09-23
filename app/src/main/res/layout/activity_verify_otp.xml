@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="225dp"
+        android:layout_height="225dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-40dp"
+        app:strokeColor="#5D1049"
+        app:strokeWidth="1dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        android:id="@+id/upper_logo_view"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/gigachat">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="TrackIt"
+            android:layout_marginBottom="30dp"
+            android:textSize="18.5dp"
+            android:fontFamily="@font/nova_round"
+            android:gravity="center_horizontal"
+            android:textColor="#000000">
+
+        </TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="125dp"
+        android:elevation="15dp"
+        android:paddingBottom="125dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+
+
+
+        <TextView
+            android:id="@+id/nice_to_see_you_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nova_round"
+            android:paddingBottom="0dp"
+            android:text="Please enter the OTP"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="25dp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:id="@+id/otp_card"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/selector_un_pass"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_below="@+id/nice_to_see_you_tv">
+
+
+
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="24dp"
+                android:background="@null"
+                android:hint="OTP"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorTitle" />
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/otp_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/verify_and_continue"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify and continue"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:padding="2.5dp"
+                android:layout_marginRight="-20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_gravity="right">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+

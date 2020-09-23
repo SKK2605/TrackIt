@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="175dp"
+        android:layout_gravity="bottom">
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="0dp"
+        android:outlineAmbientShadowColor="#000000"
+        android:padding="0dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:fontFamily="@font/nova_round"
+            android:paddingLeft="7dp"
+            android:text="TrackIt"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#C4DBE0"
+            android:textSize="21.2dp" />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/center"
+        android:layout_below="@id/toolbar"
+        app:cardCornerRadius="21dp"
+        android:layout_marginLeft="7.1dp"
+        android:layout_marginRight="7.1dp"
+        android:layout_marginBottom= "35dp"
+        android:layout_marginTop="2dp"
+        app:strokeWidth="0dp"
+        android:elevation="6dp"
+        app:strokeColor="@color/colorPrimaryDark"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="22dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nova_round" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:id="@+id/go_back"
+                android:padding="3.2dp"
+                android:layout_marginLeft="-15dp">
+
+            </ImageView>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_rl"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="247dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Name"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:id="@+id/name_hint"
+                    android:textSize="19dp"
+                    android:layout_marginRight="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:fontFamily="@font/nova_round">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/decoded_name"
+                    android:layout_below="@+id/name_hint"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginRight="37dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/nova_round"
+                    android:textColor="#000000"
+                    android:hint="Enter your name..."/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/name_rl"
+                android:id="@+id/status_rl"
+                android:layout_marginTop="13.5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#000000"
+                    android:text="Status"
+                    android:gravity="center_vertical"
+                    android:id="@+id/about_hint"
+                    android:textSize="19dp"
+                    android:layout_marginRight="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:fontFamily="@font/nova_round">
+
+                </TextView>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/about_hint"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginRight="37dp"
+                    android:id="@+id/status_edit_text"
+                    android:fontFamily="@font/nova_round"
+                    android:textSize="20dp"
+                    android:hint="Enter your status..."/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/status_rl"
+                android:id="@+id/Phone_rl"
+                android:layout_marginTop="13.5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Phone"
+                    android:gravity="center_vertical"
+                    android:id="@+id/phone_hint"
+                    android:textSize="19dp"
+                    android:layout_marginRight="37dp"
+                    android:layout_marginLeft="37dp"
+                    android:fontFamily="@font/nova_round">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:text="8452824795"
+                    android:gravity="center_vertical"
+                    android:textSize="21dp"
+                    android:layout_below="@+id/phone_hint"
+                    android:layout_marginRight="37dp"
+                    android:layout_marginLeft="37.5dp"
+                    android:id="@+id/phone_number"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    app:cardCornerRadius="11dp"
+                    android:id="@+id/done_btn"
+                    android:layout_below="@id/phone_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="42dp"
+                    android:background="#11789C"
+                    android:backgroundTint="@color/colorPrimaryDark">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Done"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:textColor="#C4DBE0">
+
+                    </TextView>
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+</RelativeLayout>
+

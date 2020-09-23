@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to TrackIt !"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:id="@+id/welcome_tv"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nova_round">
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/welcome_tv"
+        android:text="SCAN"
+        android:id="@+id/scan_btn"
+        android:layout_marginTop="225dp"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        ></Button>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Please scan your Aadhar card to register yourself "
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/scan_btn"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:layout_marginBottom="55dp"
+            android:textSize="22.5dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/nova_round">
+        </TextView>
+
+</RelativeLayout>

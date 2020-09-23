@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "261371118430",
+    "firebase_url": "https://trackit-6336d.firebaseio.com",
+    "project_id": "trackit-6336d",
+    "storage_bucket": "trackit-6336d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261371118430:android:ce245275816dedad8c45cf",
+        "android_client_info": {
+          "package_name": "com.disease.trackit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261371118430-ljibst3956tmknk3rkukec7k7f6579ue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.disease.trackit",
+            "certificate_hash": "fcce144fa61796e5e40550cc49fc646e4828f937"
+          }
+        },
+        {
+          "client_id": "261371118430-0fottl4ri48sr9oo11njvolqsu8bgjid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb10Jo1wyE75FDdJWOdDRpuneRJEKuMn4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261371118430-0fottl4ri48sr9oo11njvolqsu8bgjid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
